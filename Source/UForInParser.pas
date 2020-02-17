@@ -63,6 +63,13 @@ begin
 
  result:= i<=Length(SourceString);
 
+ if i=1 then
+ begin
+  delete(SourceString,1,1);
+  CurString:='';
+  exit;
+ end;
+
  if Result then
  begin
  if i=Length(SourceString) then
