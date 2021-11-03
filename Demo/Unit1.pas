@@ -34,6 +34,9 @@ begin
   Memo1.Lines.add(s);
  for s in StringParser('Test1;Test2;Test3;Test4;Test5',';') do
   Memo1.Lines.add(s);
+ for s in StringParser('1;2;3;4;5',';') do
+  Memo1.Lines.add(s);
+
 end;
 
 end.
