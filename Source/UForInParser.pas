@@ -1,5 +1,5 @@
-(*
-  Возвращает из строки Source подстроки разделенные символом Delimiter
+п»ї(*
+  Р’РѕР·РІСЂР°С‰Р°РµС‚ РёР· СЃС‚СЂРѕРєРё Source РїРѕРґСЃС‚СЂРѕРєРё СЂР°Р·РґРµР»РµРЅРЅС‹Рµ СЃРёРјРІРѕР»РѕРј Delimiter
   Returns from string Source substrings separated by Delimiter
 
   author: https://t.me/devdemi
@@ -27,7 +27,7 @@ Type
     SourceString, DelimiterChar: string;
     function GetCurrentString: string;
   public
-    // обслуживание перечислителя, не для внешнего использования!
+    // РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ РїРµСЂРµС‡РёСЃР»РёС‚РµР»СЏ, РЅРµ РґР»СЏ РІРЅРµС€РЅРµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ!
     property Current: string read GetCurrentString;
     function MoveNext: boolean;
     function GetEnumerator: TParserEnumerator; {$IFDEF SUPPORTS_INLINE}inline;
@@ -37,7 +37,7 @@ Type
   end;
 {$ENDIF}
 ///   <summary>
-///   Возвращает из строки Source подстроки разделенные символом Delimiter
+///   Р’РѕР·РІСЂР°С‰Р°РµС‚ РёР· СЃС‚СЂРѕРєРё Source РїРѕРґСЃС‚СЂРѕРєРё СЂР°Р·РґРµР»РµРЅРЅС‹Рµ СЃРёРјРІРѕР»РѕРј Delimiter
 ///   Returns from string Source substrings separated by Delimiter
 ///   </summary>
 
