@@ -30,15 +30,15 @@ Type
     // обслуживание перечислителя, не для внешнего использования!
     property Current: string read GetCurrentString;
     function MoveNext: boolean;
-    function GetEnumerator: TParserEnumerator; {$IFDEF SUPPORTS_INLINE}inline;
-
+    function GetEnumerator: TParserEnumerator; {$IFDEF SUPPORTS_INLINE}inline; {$ENDIF}
     Constructor Create(const Source: string; Delimiter: Char);
     Destructor Destroy; override;
   end;
-{$ENDIF}
+
 ///   <summary>
 ///   Возвращает из строки Source подстроки разделенные символом Delimiter
 ///   Returns from string Source substrings separated by Delimiter
+///   <code>https://t.me/devdemi</code>
 ///   </summary>
 
 function StringParser(const Source: string; Delimiter: Char): TParserEnumerator;
