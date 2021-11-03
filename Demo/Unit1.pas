@@ -36,7 +36,6 @@ begin
   Memo1.Lines.add(s);
  for s in StringParser('1;2;3;4;5',';') do
   Memo1.Lines.add(s);
-
 end;
 
 end.

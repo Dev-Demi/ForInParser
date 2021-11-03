@@ -1,10 +1,19 @@
+(*
+  Возвращает из строки Source подстроки разделенные символом Delimiter
+  Returns from string Source substrings separated by Delimiter
+
+  author: https://t.me/devdemi
+
+  https://github.com/Dev-Demi/ForInParser
+*)
+
 unit UForInParser;
 
 interface
 
 {$IF Defined(FPC) or (COMPILERVERSION>=17)}
-{$DEFINE SUPPORTS_INLINE}
-{$DEFINE SUPPORTS_FOR_IN}
+ {$DEFINE SUPPORTS_INLINE}
+ {$DEFINE SUPPORTS_FOR_IN}
 {$IFEND}
 
 uses System.SysUtils;
@@ -22,11 +31,11 @@ Type
     property Current: string read GetCurrentString;
     function MoveNext: boolean;
     function GetEnumerator: TParserEnumerator; {$IFDEF SUPPORTS_INLINE}inline;
-{$ENDIF}
-    // генерировать перечень файлов
+
     Constructor Create(const Source: string; Delimiter: Char);
     Destructor Destroy; override;
   end;
+{$ENDIF}
 ///   <summary>
 ///   Возвращает из строки Source подстроки разделенные символом Delimiter
 ///   Returns from string Source substrings separated by Delimiter
